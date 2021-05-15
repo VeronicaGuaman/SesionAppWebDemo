@@ -1,0 +1,24 @@
+﻿@model IEnumerable<SesionAppWebDemo.Models.Product>
+
+
+<h1> Administración de productos</h1>
+<table class="table-bordered">
+    <thead>
+        <tr>
+            <td>Nombre</td>
+            <td>Description</td>
+            <td>Stock</td>
+            <td>Fecha de Registr</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model) {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Description</td>
+            <td>@item.Stock</td>
+            <td>@item.DateRegister</td>
+        </tr>
+        }
+    </tbody>
+</table>
