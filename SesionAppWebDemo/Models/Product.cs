@@ -11,7 +11,7 @@ namespace SesionAppWebDemo.Models
         [Key]
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El campo nombre es requerido")]
         [StringLength(50)]
         public string Name { get; set; }
 

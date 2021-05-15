@@ -1,7 +1,8 @@
 ﻿@model SesionAppWebDemo.Models.Product
 
-<form method="post" asp-controller="Product" asp-action="CreateProduct">
+<form method="post" asp-controller="Product" asp-action="EditProduct">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input asp-for="Id" hidden/>
     <div class="row">
         <div class="col-12">
             <div class="col-sm-6">
